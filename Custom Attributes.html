@@ -1,0 +1,43 @@
+<html>
+
+    <head>
+        <title>Introduction to AngularJS</title>
+    
+        <!-- Load bootstrap -->    
+        <link rel="stylesheet" href="D:\Niyas\Google Drive\Techie\Framework\bootstrap-3.3.7-dist\css\bootstrap.min.css"/>
+
+        <!-- JQuery -->
+        <script src="D:\Niyas\Google Drive\Techie\Framework\jquery\jquery-3.1.1.js"></script>    
+            
+    </head>    
+    
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                <!-- html attribute "style" used here where browser can intrepret as it is HTML standard attribute and display the font size with 10 px -->
+                <h1 style="font-size: 10px;">Hello AngularJS!! </h1>
+                
+                <!-- Custom Attributes - browser no idea on how to intrepret this custome attribute reply-back and do nothing when displaying, but this custom attribute is still in DOM model which can be used thru JS-->
+                <h2 reply-back="I am Custom Attribute"> Hello Custom Attribute!!</h2>
+                
+                <!-- HTML5 introdcued data dash -->
+                <h3 data-reply-back="I am Custom Attribute with HTML5"> Hello Custom Attribute supported in HTML5 with data prefixed!!</h3>
+                
+                <!-- Angular JS used "ng" for the custom attributes-->
+                <h4 ng-reply-back="I am Custom Attribute with AngularJS"> Hello Custom Attribute in AngularJS!</h4>
+            </div>
+        </div>
+       
+        
+
+        
+        <!-- To Explain on Global namespace conflicts -->
+        <script src="app2.js"></script>
+        
+        <script src="app1.js"></script>
+        
+    </body>    
+    
+
+</html>
